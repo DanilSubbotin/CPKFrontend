@@ -9,8 +9,8 @@ const AreasExpertise = () => {
       <ul className="w-full grid grid-cols-4 gap-x-10 gap-y-24">
         {constantsConfig.areas.map(area => (
             <li className="flex gap-8 items-center justify-center" key={area.title}>
-                <div className="w-8 h-8 bg-text-footer"/>
-                <h4 className="font-semibold">{area.title}</h4>
+                <div className="min-w-8 min-h-8 bg-text-footer"/>
+                <h4 className="font-semibold text-center">{area.title}</h4>
             </li>
         ))}
       </ul>

@@ -59,7 +59,6 @@ const bitrixAdvantage = [
 ];
 
 const AdvantagesBitrix = () => {
-    console.table(bitrixAdvantage)
   return (
     <section className="w-full px-10 flex flex-col items-center gap-34 my-34 text-primary">
       <h1 className="uppercase font-semibold text-4xl text-primary">
@@ -67,7 +66,7 @@ const AdvantagesBitrix = () => {
       </h1>
       {bitrixAdvantage.map((advantage, index) => (
         <div className="w-full grid grid-cols-2" key={index}>
-          <h4 className={`font-semibold text-xl ${index % 2 === 0 ? 'text-blue-500' : ''}`}>{advantage.title}</h4>
+          <h4 className="font-semibold text-xl">{advantage.title}</h4>
           <div className="flex flex-col gap-10">
             <h5 className="font-semibold text-xl">{advantage.listTitle}</h5>
             <ul className="w-full grid grid-cols-2 text-text-gray text-base">

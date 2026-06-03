@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { constantsConfig } from "../../utils/constants.config";
 import TabPanel from "../TabPanel";
-import SalesBlock from "./TabsBlocks/SalesBlock";
-import ServiceBlock from "./TabsBlocks/ServiceBlock";
-import MarketingBlock from "./TabsBlocks/MarketingBlock";
-import PortalBlock from "./TabsBlocks/PortalBlock";
-import ConstructorBlock from "./TabsBlocks/ConstructorBlock";
+import TabContainer from "./TabsBlocks/TabContainer";
 
 const BpmSoftTabbing = () => {
   const [activeTab, setActiveTab] = useState(constantsConfig.tabs[0]);
@@ -13,15 +9,40 @@ const BpmSoftTabbing = () => {
   const renderTabs = (tab: string) => {
     switch (tab) {
       case "Продажи":
-        return <SalesBlock />;
+        return (
+          <TabContainer
+            title="Автоматизация полного цикла продаж - от первого обращения клиента до повторных продаж и развития клиентской базы. BPMSoft помогает выстраивать прозрачные процессы, контролировать коммуникации, управлять воронками продаж и повышать эффективность коммерческих подразделений."
+            imgLink=""
+          />
+        );
       case "Сервис":
-        return <ServiceBlock />;
+        return (
+          <TabContainer
+            title="Управление клиентским сервисом, обращениями и внутренними сервисными процессами компании в единой системе. Контроль SLA, маршрутизация обращений, автоматизация сервисных сценариев и прозрачная аналитика качества обслуживания."
+            imgLink=""
+          />
+        );
       case "Маркетинг":
-        return <MarketingBlock />;
+        return (
+          <TabContainer
+            title="Инструменты для управления маркетинговыми коммуникациями, клиентскими сегментами, digital-активностями и аналитикой эффективности маркетинга. Поддержка сквозной аналитики и автоматизированных сценариев взаимодействия с клиентами."
+            imgLink=""
+          />
+        );
       case "Портал":
-        return <PortalBlock />;
+        return (
+          <TabContainer
+            title="Единое цифровое пространство для сотрудников компании: коммуникации, задачи, согласования, документы, внутренние сервисы и совместная работа подразделений в рамках единой платформы."
+            imgLink=""
+          />
+        );
       case "Конструктор":
-        return <ConstructorBlock />;
+        return (
+          <TabContainer
+            title="Low-code инструменты для гибкой настройки бизнес-процессов, интерфейсов, карточек, маршрутов согласования и корпоративных сценариев без необходимости сложной разработки."
+            imgLink=""
+          />
+        );
 
       default:
         <div>Блока не найдено</div>;
@@ -40,7 +61,7 @@ const BpmSoftTabbing = () => {
         tabs={constantsConfig.tabs}
         onChange={onChange}
       />
-      <div className="min-h-100 w-full">{renderTabs(activeTab)}</div>
+      <div className="w-full">{renderTabs(activeTab)}</div>
     </section>
   );
 };

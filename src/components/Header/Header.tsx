@@ -12,7 +12,7 @@ const Header = () => {
       <Navigation />
       <div className="flex flex-col items-start font-semibold text-text-gray">
         <span>+ 7 937 123 45 67</span>
-        <span>Mail@company.com</span>
+        <span>info@procpk.ru</span>
       </div>
     </header>
   );

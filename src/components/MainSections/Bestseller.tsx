@@ -14,20 +14,16 @@ const Bestseller = () => {
         </div>
         <div />
         <div>
-          <h2 className={styleH2}>TOP 10</h2>
-          <h3 className={styleH3}>партнер Битрикс 24</h3>
+          <h2 className={styleH2}>Топ-15</h2>
+          <h3 className={styleH3}>Интеграторов Москвы</h3>
         </div>
         <div>
-          <h2 className={styleH2}>256</h2>
-          <h3 className={styleH3}>проектов</h3>
+          <h2 className={styleH2}>250+</h2>
+          <h3 className={styleH3}>Реализованных проектов</h3>
         </div>
         <div>
-          <h2 className={styleH2}>10+</h2>
-          <h3 className={styleH3}>процессов</h3>
-        </div>
-        <div>
-          <h2 className={styleH2}>20</h2>
-          <h3 className={styleH3}>специалистов</h3>
+          <h2 className={styleH2}>Аттестованы по enterprise-направлениям</h2>
+          <h3 className={styleH3}>Bitrix24 и BPMsoft</h3>
         </div>
       </div>
     </section>

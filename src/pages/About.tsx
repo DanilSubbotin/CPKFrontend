@@ -9,7 +9,7 @@ const About = () => {
             <AboutSection />
             <AreasExpertise />
             <Statistics />
-            <TellButtonSection title="Мы превращаем идеи в решения, которые двигают ваш бизнес и вашу команду вперёд и только вперед."/>
+            <TellButtonSection title="Помогаем компаниям расти, масштабироваться и принимать решения на основе данных"/>
         </main>
     )
 }
